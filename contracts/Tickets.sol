@@ -7,9 +7,8 @@ import "@openzeppelin/contracts/token/ERC20/extensions/draft-ERC20Permit.sol";
 import "@openzeppelin/contracts/security/Pausable.sol";
 import "@openzeppelin/contracts/access/AccessControl.sol";
 
-contract Ticket is ERC20, ERC20Burnable, ERC20Permit, Pausable, AccessControl 
+contract Ticket is ERC20, ERC20Burnable, ERC20Permit, Pausable, AccessControl
 {
-    
     // To allow emergency stop of the contract.
     bytes32 public constant PAUSER_ROLE = keccak256("PAUSER_ROLE");
     
