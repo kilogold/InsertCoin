@@ -27,6 +27,6 @@ struct CatalogItem
     address itemContract;
     uint256 price;
     //string metadataURI; -- Let's skip metadata for now. That might involve oracles...
-    bytes32 userDataBuffer;
+    uint256 userDataBuffer;
     bool claimed;
 }
